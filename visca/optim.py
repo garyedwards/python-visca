@@ -97,6 +97,7 @@ class Optim(Camera):
     iris_table['CLOSE'] = '00'
     
     """ Mapping from camera zoom in x (times) to hex value """
+    zoom_table = {}
     zoom_table['1x'] = '0000'
     zoom_table['2x'] = '0DC1'
     zoom_table['3x'] = '186C'
@@ -119,6 +120,7 @@ class Optim(Camera):
     zoom_table['20x'] = '4000'
     
     """ Mapping from camera focus position to hex value """
+    focus_near_limit_table = {}
     focus_near_limit_table['100m'] = '1000'
     focus_near_limit_table['10m'] = '2000'
     focus_near_limit_table['5m'] = '3000'
